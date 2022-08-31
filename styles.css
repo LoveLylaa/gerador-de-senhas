@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-size: x-large;
+    font-weight: 500;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+    background: linear-gradient(45deg, #222831, #393E46, #FFD369, #EEEEEE);
+    background-size: 200% 200%;
+    animation: colors 15s ease infinite;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }   
+    
+    50% {
+        background-position: 100% 50%;
+    }    
+
+    100% {
+        background-position: 0% 50%;
+    }    
+}
+
+main {
+    padding: 20px;
+    box-shadow: 0 1px 10px rgb(46, 46, 46);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgb(59, 59, 59);
+}
+
+main > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+input {
+    padding: 5px;
+    outline: none;
+    accent-color: #FFD369;
+    border-color: #FFD369;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
+input[type=range] {
+    width: 90%;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -webkit-appearance: none;
+    background: #FFD369;
+    height: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+    height: 25px;
+    width: 25px;
+    appearance: none;
+    background-color: #EEEEEE;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button {
+    background-color: #FFD369;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 5px;
+}
